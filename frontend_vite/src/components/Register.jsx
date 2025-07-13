@@ -19,7 +19,7 @@ const Register = () => {
         const Url = import.meta.env.VITE_URL 
         console.log(Url)
         try{
-        const responce = await axios.post(Url,formData)
+        const responce = await axios.post(`${Url}register/`,formData)
         console.log(responce.data)
         console.log("success")
         setsetSucess(true)
